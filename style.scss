@@ -67,7 +67,7 @@
 	background: #fff;
 	overflow: hidden;
 	@media screen and (max-width: 860px) {
-		width: 210px;
+		width: 220px;
 		height: 50px;
 		left: 90px;
 		bottom: 50px;
@@ -81,9 +81,18 @@
 		background: #fd6c13;
 		height: 70px;
 		width: 0;
+		@media screen and (max-width: 860px) {
+			animation-name: mobile-loading;
+		}
 	}
 }
 @keyframes loading {
+	100% {
+		width: 320px;
+		background: #ffca35;
+	}
+}
+@keyframes mobile-loading {
 	100% {
 		width: 220px;
 		background: #ffca35;
