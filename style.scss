@@ -43,6 +43,7 @@
 	background: #ffca35;
 	animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 	@media screen and (max-width: 860px) {
+		animation-name: mobile-sun;
 		width: 150px;
 		height: 150px;
 	}
@@ -54,6 +55,15 @@
 	}
 	100% {
 		bottom: 250px;
+	}
+}
+@keyframes mobile-sun {
+	0% {
+		bottom: 0;
+		background: #fd6c13;
+	}
+	100% {
+		bottom: 150px;
 	}
 }
 .cloud__loading {
